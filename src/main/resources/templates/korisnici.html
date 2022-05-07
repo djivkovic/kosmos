@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Korisnici</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/korisnici.css " th:href="@{css/korisnici.css}" />
+</head>
+
+<body>
+
+
+<h1>Korisnici</h1>
+
+<button onclick="location.href = '/add_korisnik'">Add new korisnik</button>
+<button onclick="location.href = '/logout'">Log out</button>
+<br><br>
+<table id="korisnici">
+    <tr>
+        <th>Id</th>
+        <th>First name</th>
+        <th>Last name</th>
+        <th>See more</th>
+        <th>Delete</th>
+    </tr>
+    <tr th:each="korisnik : ${Korisnici}">
+        <td th:text="${korisnik.id}"></td>
+        <td th:text="${korisnik.firstname}"></td>
+        <td th:text="${korisnik.lastname}"></td>
+        <td><a th:href="${'/korisnici/' + korisnik.id}">View</a></td>
+        <td><a th:href="${'/delete/' + korisnik.id}">Delete</a></td>
+    </tr>
+</table>
+
+</body>
+
+</html>

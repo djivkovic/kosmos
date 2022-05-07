@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Korisnik</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" th:href="@{/css/korisnik.css}" href="css/korisnik.css" />
+</head>
+
+<body>
+<button onclick="location.href = '/logout'">Log out</button>
+<h2 style="text-align:center">Korisnik Profile</h2>
+<div class="card">
+    <h1 th:text="${korisnik.firstname}"></h1>
+    <h1 th:text="${korisnik.lastname}"></h1>
+    <p class="title" th:text="${korisnik.position}"></p>
+    <br>
+</div>
+<a id="korisnikDisplayLink" th:href="${'/korisnici'}" style="text-align: center;">Back</a>
+
+</body>
+
+</html>

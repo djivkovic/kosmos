@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+    <title>COSMOS</title>
+</head>
+
+<body>
+
+<section id="banner">
+    <div class="wrapper">
+        <header>
+            <a href="index.html" id="logo">C<span> </span>O <span> </span>S <span> </span>M <span> </span>O <span>
+                    </span>S</a>
+
+
+            <div class="navigation">
+                <nav>
+                    <a href="index.html" id="nav_home">Home</a>
+                    <a href="#" id="nav_restaurants">Restaurants</a>
+                    <a href="../login/login_form.html" id="nav_login" target="_blank"> Login</a>
+                    <a href="#" id="nav_registration">Registration</a>
+                </nav>
+            </div>
+        </header>
+
+        <div class="content">
+            <h1 class="title"><span>COSMOS</span> <span>F</span>ood <span>D</span>elivery</h1>
+
+            <h2 class="sub_title">FASTEST DELIVERY IN SPACE!</h2>
+
+            <div class="button_wrapper">
+                <a th:href="${'/korisnici'}" class="button button_highlight">Learn More</a>
+                <a href="#" class="button button_secondary">About us</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="services" class="cf">
+    <div class="wrapper">
+
+        <div class="service">
+            <h3>Appetizers</h3>
+            <p></p>
+            <a href="#" class="button button_highlight">Learn More</a>
+        </div>
+        <div class="service middle">
+            <h3>Main courses</h3>
+            <p></p>
+            <a href="#" class="button button_highlight">Learn More</a>
+        </div>
+        <div class="service">
+            <h3>Desserts</h3>
+            <p></p>
+            <a href="#" class="button button_highlight">Learn More</a>
+        </div>
+
+    </div>
+</section>
+
+<section id="restaurants">
+    <div class="wrapper">
+        <h2 class="title">Our Restaurants</h2>
+
+
+
+        <ul id="slider_buttons">
+            <a href="#">
+                <li class="current"></li>
+            </a><a href="#">
+            <li></li>
+        </a><a href="#">
+            <li></li>
+        </a>
+        </ul>
+
+        <ul id="slider" class="slider_restaurants">
+            <li>
+                <img src="images/image1.jfif" alt="img2">
+
+            </li>
+            <li>
+                <img src="images/image2.jpg" alt="img2">
+
+            </li>
+            <li>
+                <img src="images/image3.jpg" alt="img3">
+
+            </li>
+        </ul>
+
+
+    </div>
+</section>
+
+<div class="space"></div>
+
+
+<section id="couriers">
+    <div class="wrapper">
+        <h2 class="title"> Our Couriers
+        </h2>
+        <ul id="couriers_buttons">
+            <a href="#">
+                <li class="current"></li>
+            </a><a href="#">
+            <li></li>
+        </a><a href="#">
+            <li></li>
+        </a>
+        </ul>
+
+        <ul id="courier" class="slider_couriers">
+            <li class="slider_courier">
+
+                <div class="courier_info">
+                    <p>Marko Markovic</p>
+                    <a href="" class="btn">More Information</a>
+                </div>
+                <img src="images/d1.jfif" alt="img2">
+
+
+            </li>
+            <li class="slider_courier">
+                <div class="courier_info">
+                    <p>Petar Petrovic</p>
+                    <a href="" class="btn">More Information</a>
+                </div>
+                <img src="images/d2.jfif" alt="img2">
+
+            </li>
+            <li class="slider_courier">
+                <div class="courier_info">
+                    <p>Misa Misic</p>
+                    <a href="" class="btn">More Information</a>
+                </div>
+                <img src="images/d3.jfif" alt="img3">
+
+            </li>
+        </ul>
+
+
+    </div>
+</section>
+
+
+
+
+<section id="contact">
+    <div class="wrapper">
+        <h2 class="title">Get In Touch</h2>
+        <p class="sub_title">Send us a feedback and enjoy in our food</p>
+        <a href="" class="button button_highlight button_large">Contact Us</a>
+    </div>
+</section>
+
+<footer>
+    <p class="copyright">&copy;Ivke 2022</p>
+</footer>
+</body>
+
+</html>
+
+
+

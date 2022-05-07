@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<div class="container">
+    <div class="header">
+        <h1>Login</h1>
+    </div>
+    <div class="main">
+        <form th:action="@{/login}" th:object="${login}" method="post">
+				<span>
+					<i class="fa fa-user"></i>
+					<input id="firstName" type="text" placeholder="Username" th:field="*{username}"/>
+				</span><br>
+            <span>
+					<i class="fa fa-lock"></i>
+					<input id="lastName" type="password" placeholder="Password" th:field="*{password}"/>
+				</span><br>
+            <input type="submit" value="Login">
+
+        </form>
+    </div>
+</div>
+</body>
+
+</html>
